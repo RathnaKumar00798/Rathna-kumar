@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Sample</title>
+<script language="Javascript">
+function profilesubmit()
+{
+alert("here");
+alert(document.pform.uname.value);
+document.getElementById('display').innerHTML = 
+                    document.getElementById("uname").value;
+document.pform.username.value;
+document.pform.message.value;
+
+
+}
+
+</script>
+
+</head>
+<body background="D:\HD\a86CfEx.jpg"  width="200" height="200" >
+<h>Sign up</h>
+<form name="pform" action="">
+  User name:<input type="text" name="username" id="uname" placeholder="enter the name" required><br>
+<br>
+  Password: <input type="password" name="Password" ><br>
+<br>
+  <input type="radio" name="gender" value="Male" checked>Male<br>
+<br>
+  <input type="radio" name="gender" value="Female">Female<br>
+<br>
+ <input type="radio" name="other" value="Others">Others<br>
+<br>
+   <select name="department">
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="ECE">ECE</option>
+    </select><br><br>
+<br>
+<textarea name="message" rows="10" cols="30">
+
+</textarea>
+<br><br><br>
+  <input type="submit" value="Submit" onclick="profilesubmit(); return false;"><br>
+</form>
+<label>Your input: </label>
+<p><span id='display'></span></p>
+
+</body>
+</html>
+
